@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<!--
+        Assigment 5
+
+        Name: Sasha Steffey
+        Date: 9/28/2025
+        CSC 372-01
+
+        This is a playable Rock Paper Scissors game with result and score tracking. It uses HTML, CSS, and JS.
+        It uses setInterval for timing functionality.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="player">
+            <h1>Player</h1>
+            <div id="player-choice">
+                <img src="rock.PNG" class="choice" data-choice-number="0" alt="Hand in Rock Shape">
+
+                <img src="paper.PNG" class="choice" data-choice-number="1" alt="Hand in Paper Shape">
+
+                <img src="scissors.PNG" class="choice" data-choice-number="2" alt="Hand in Scissors Shape">
+            </div>
+        </section><br>
+        <section id="computer">
+            <h1>Computer</h1>
+            <div id="computer-choice">
+                <img src="question-mark.PNG" class="choice" alt="Empty Question Mark">
+            </div>
+        </section>
+        <section id="results">
+            <h1></h1>
+        </section>
+        <section id="score">
+            <h3 id="player-wins">Player Wins: 0</h3>
+            <h3 id="computer-wins">Computer Wins: 0</h3>
+            <h3 id="ties">Ties: 0</h3>
+            <button id="reset">Reset</button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
