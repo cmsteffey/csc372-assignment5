@@ -1,0 +1,30 @@
+#player-choice {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+}
+img.choice {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+section> h1{
+    width: max-content;
+    margin: 0 auto;
+}
+#computer-choice > img{
+    display: block;
+    margin: 0 auto;
+}
+
+section#score > h3{
+    margin: 0 auto;
+    width: max-content;
+}
+section#score {
+
+}
+#reset{
+    display:block;
+    margin: 0 auto;
+}
