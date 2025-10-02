@@ -1,5 +1,7 @@
 document.querySelectorAll('#player-choice > img').forEach(img => {
     img.addEventListener('click', (e) => {
+        document.querySelectorAll("#player-choice > img").forEach((e) => e.classList.remove("clicked"));
+        e.currentTarget.classList.add("clicked");
         let timerData = {count: 0, intervalId: 0}
         timerData.intervalId = setInterval((choiceNumber, timerData) => {
             if(++timerData.count === 6){
